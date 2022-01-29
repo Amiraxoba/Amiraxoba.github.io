@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./waves.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+
+    <title>Amiraxoba - Home</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Prompt", sans-serif;
+            color: white;
+            background: #202731;
+        }
+
+        section {
+            position: relative;
+            display: block;
+            flex-direction: column;
+            text-align: center;
+            padding: 100px 20vw;
+            height: 300px;
+        }
+
+        .blue {
+            background: #3c31dd;
+        }
+
+        .red {
+            background: #dd3f31;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        .pink {
+            background: #ff0066;
+        }
+
+        .dark {
+            background: #0f0f10;
+            padding-bottom: 400px;
+        }
+
+        .blob-motion {
+            position: absolute;
+            transform: translate(-450px, -80px);
+            height: 400px;
+            z-index: 0;
+        }
+
+        .spacer {
+            aspect-ratio: 300/50;
+            width: 100%;
+            height: 200px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .layered-top {
+            background-image: url("./layered-top.svg");
+        }
+
+        .layered-bottom {
+            background-image: url("./layered-bottom.svg");
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Who are we Section -->
+    <section class="blue">
+        <h1>Who are we</h1>
+        <p>
+            We are an team of Web-Engeneering Amateurs who are also intrested in Go and JVM-Languages like Java and
+            Kotlin.<br>
+            We currently working on our own interpreted Script-Language: <b>Candle</b>.
+        </p>
+        <div class="wave-top">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+    <!-- The Layered Waves between Who we are and Languages -->
+    <div class="spacer layered-top"></div>
+    <!-- The Most used Languages Section -->
+    <section class="red" style="padding-top: 50px;">
+        <h1>Our Most Used Languages</h1>
+        Go for Web-Apps Like our CLi Applications, Interpreters etc.<br>
+        JavaScript ( + HTML) for Desktop Apps our Website (which you currently view)
+    </section>
+    <div class="spacer layered-bottom"></div>
+    <section class="pink" style="height: 900px;">
+        <h1>Projects</h1>
+        <p>
+        <h3>Current in Work</h3>
+        <li><a href="https://github.com/Amiraxoba/Candle">Candle</a> is an interpreted Script
+            Language based on its Parent <b>AureumScript</b></li>
+        <li><a href="https://github.com/Amiraxoba/Hriseob">Hriseob</a> is an intuitive Cli-App for
+            Managing files and Directories on your Mashine or on your Server</li>
+        <h3>Already finished</h3>
+        <li><a href="https://github.com/Amiraxoba/Mumupls">Mumupls</a> is an Web-Browser App coded
+            with the Electron Framework</li>
+        <li><a href="https://github.com/Amiraxoba/FileSharingService">FileSharingService</a> is an
+            File-Sharing-Service to upload FIles on a Server in a WebApp and view them in the Browser or in the Cli
+            CLient</li>
+        <h3>Reachability</h3>
+        All of our Projects are Open Source and Downloadable at our <a href="https://github.com/Amiraxoba">Github Organisation</a> <br>All Licenses are are found <a href="/LICENSE">here</a>
+        </p>
+    </section>
+    <!-- Members Section -->
+    <section class="dark">
+        <h1 style="background-color: transparent; z-index: 1;">Members</h1>
+        <p style="background-color: transparent; z-index: 1;">Illo facilis inventore quis fugit obcaecati eius quaerat
+            voluptatem
+            hic rerum repellat adipisci repellendus
+            nam at, iure ipsa accusamus quo illum possimus voluptas doloribus deleniti! Hic sint odio velit maiores.</p>
+        <!-- The AnimatedBlob -->
+        <svg class="blob-motion" id="visual" viewBox="0 0 900 600" width="900" height="600"
+            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+            <g transform="translate(499.7671161398958 288.29061051410974)">
+                <path id="blob1"
+                    d="M88.5 -105.5C113.3 -63.6 131.2 -31.8 132.2 1.1C133.3 33.9 117.5 67.9 92.7 95.7C67.9 123.5 33.9 145.3 -14.8 160.1C-63.6 175 -127.3 182.9 -154.1 155.1C-180.9 127.3 -171 63.6 -164.5 6.5C-158 -50.7 -155 -101.4 -128.2 -143.2C-101.4 -185 -50.7 -218 -9.4 -208.6C31.8 -199.2 63.6 -147.3 88.5 -105.5"
+                    fill="#BB004B"></path>
+            </g>
+            <g transform="translate(481.52983549309187 229.4244590731937)">
+                <path style="visibility: hidden;" id="blob2"
+                    d="M107.3 -94.3C143.5 -71.2 180.3 -35.6 178.4 -1.9C176.5 31.8 136 63.6 99.8 108.6C63.6 153.6 31.8 211.8 -4.7 216.5C-41.2 221.2 -82.5 172.5 -117 127.5C-151.5 82.5 -179.2 41.2 -181.4 -2.1C-183.5 -45.5 -160 -91 -125.5 -114.1C-91 -137.3 -45.5 -138.2 -4.9 -133.2C35.6 -128.3 71.2 -117.5 107.3 -94.3"
+                    fill="#BB004B"></path>
+            </g>
+        </svg>
+
+        <!-- Script to Animate the Blob -->
+        <script>
+            const tween = KUTE.fromTo(
+                '#blob1',
+                { path: "#blob1" },
+                { path: "#blob2" },
+                { repeat: 999, duration: 3000, yoyo: true }
+            )
+            tween.start()
+        </script>
+
+        <div class="wave-bottom">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+</body>
+
+</html>
