@@ -21,7 +21,7 @@
             margin: 0;
             font-family: "Prompt", sans-serif;
             color: white;
-            background: #202731;
+            background: #0f0f10;
         }
 
         section {
@@ -53,10 +53,18 @@
         }
 
         .blob-motion {
-            position: absolute;
-            transform: translate(-450px, -80px);
-            height: 400px;
+            position: relative;
+            transform: translate(0, -200px);
+            height: 750px;
+            width: 950px;
             z-index: 0;
+        }
+
+        .blob-text {
+            background-color: transparent;
+            z-index: 2;
+            transform: translate(0, -800px);
+            position: relative;
         }
 
         .spacer {
@@ -75,12 +83,17 @@
         .layered-bottom {
             background-image: url("./layered-bottom.svg");
         }
+
+        .wave-bottom {
+            transform: translate(0, 2000px) rotate(180deg);
+        }
+
     </style>
 </head>
 
 <body>
     <!-- Who are we Section -->
-    <section class="blue">
+    <section id="who" class="blue">
         <h1>Who are we</h1>
         <p>
             We are an team of Web-Engeneering Amateurs who are also intrested in Go and JVM-Languages like Java and
@@ -99,13 +112,13 @@
     <!-- The Layered Waves between Who we are and Languages -->
     <div class="spacer layered-top"></div>
     <!-- The Most used Languages Section -->
-    <section class="red" style="padding-top: 50px;">
+    <section id="languages" class="red" style="padding-top: 50px;">
         <h1>Our Most Used Languages</h1>
         Go for Web-Apps Like our CLi Applications, Interpreters etc.<br>
         JavaScript ( + HTML) for Desktop Apps our Website (which you currently view)
     </section>
     <div class="spacer layered-bottom"></div>
-    <section class="pink" style="height: 900px;">
+    <section id="projects" class="pink" style="height: 900px;">
         <h1>Projects</h1>
         <p>
         <h3>Current in Work</h3>
@@ -120,18 +133,14 @@
             File-Sharing-Service to upload FIles on a Server in a WebApp and view them in the Browser or in the Cli
             CLient</li>
         <h3>Reachability</h3>
-        All of our Projects are Open Source and Downloadable at our <a href="https://github.com/Amiraxoba">Github Organisation</a> <br>All Licenses are are found <a href="/LICENSE">here</a>
+        All of our Projects are Open Source and Downloadable at our <a href="https://github.com/Amiraxoba">Github
+            Organisation</a> <br>All Licenses are are found <a href="/LICENSE">here</a>
         </p>
     </section>
     <!-- Members Section -->
-    <section class="dark">
-        <h1 style="background-color: transparent; z-index: 1;">Members</h1>
-        <p style="background-color: transparent; z-index: 1;">Illo facilis inventore quis fugit obcaecati eius quaerat
-            voluptatem
-            hic rerum repellat adipisci repellendus
-            nam at, iure ipsa accusamus quo illum possimus voluptas doloribus deleniti! Hic sint odio velit maiores.</p>
+    <section id="member" class="dark">
         <!-- The AnimatedBlob -->
-        <svg class="blob-motion" id="visual" viewBox="0 0 900 600" width="900" height="600"
+        <svg class="blob-motion" id="visual" viewBox="0 0 900 600"
             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
             <g transform="translate(499.7671161398958 288.29061051410974)">
                 <path id="blob1"
@@ -144,6 +153,15 @@
                     fill="#BB004B"></path>
             </g>
         </svg>
+        <!-- The Text of the Member Section -->
+        <h1 class="blob-text">Members</h1>
+        <p class="blob-text">
+            AureumApes - Founder and Main-Dev<br>
+            SomehowPatrick - Main-Dev<br>
+            Tilo Behnke - Side-Dev, mainly Idea-Input<br>
+            Yasuakii - Idk xD… He's there. Some idea-INput
+        </p>
+
 
         <!-- Script to Animate the Blob -->
         <script>
@@ -155,16 +173,15 @@
             )
             tween.start()
         </script>
-
-        <div class="wave-bottom">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-                preserveAspectRatio="none">
-                <path
-                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-                    class="shape-fill"></path>
-            </svg>
-        </div>
     </section>
+    <div class="wave-bottom">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+            preserveAspectRatio="none">
+            <path
+                d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                class="shape-fill"></path>
+        </svg>
+    </div>
 </body>
 
 </html>
