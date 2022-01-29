@@ -40,3 +40,7 @@
 .wave-bottom .shape-fill {
     fill: #3C31DD;
 }
+
+.wave-bottom {
+    transform: translate(0, 2100px) rotate(180deg);
+}
