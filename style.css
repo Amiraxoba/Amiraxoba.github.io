@@ -10,7 +10,7 @@ section {
     display: block;
     flex-direction: column;
     text-align: center;
-    padding: 100px 20vw;
+    padding: 100px 20%;
     height: 300px;
 }
 
@@ -53,4 +53,8 @@ section {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+#blob1 {
+    transform: scale(-1,1);
 }
