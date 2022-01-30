@@ -14,6 +14,8 @@ section {
     height: 300px;
 }
 
+/* Section Classes */
+
 .blue {
     background: #3045a3;
 }
@@ -33,9 +35,11 @@ section {
     padding-bottom: 800px;
 }
 
+/* Blob stuff */
+
 .blob-motion {
     position: relative;
-    transform: translate(-200px, -200px);
+    transform: translate(0, -150px);
     z-index: 0;
 }
 
@@ -46,6 +50,8 @@ section {
     position: relative;
 }
 
+/* Stuff for the Waves */
+
 .spacer {
     aspect-ratio: 300/50;
     width: 100%;
@@ -53,8 +59,4 @@ section {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-}
-
-#blob1 {
-    transform: scale(-1,1);
 }
